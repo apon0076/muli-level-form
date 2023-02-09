@@ -1,13 +1,9 @@
 import React from "react";
 
-const Button = ({ label, setFormStatus, formStatus, isDisabled }) => {
+const Button = ({ label, handleBtnClick, isDisabled, addressIndex }) => {
   return (
     <button
-      onClick={() =>
-        label === "Previous"
-          ? setFormStatus(formStatus - 1)
-          : setFormStatus(formStatus + 1)
-      }
+      onClick={() => handleBtnClick(label, addressIndex)}
       className="form-btn"
       type="button"
       disabled={isDisabled}

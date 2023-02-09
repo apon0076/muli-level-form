@@ -20,6 +20,11 @@ body {
 .input__section input {
   padding: 10px;
 }
+.multiple-address__section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
 .form-btn__section {
   margin-top: 10px;
   display: flex;
@@ -27,8 +32,9 @@ body {
   justify-content: center;
   gap: 15px;
 }
-.form-btn{
-  padding: 5px;
+.form-btn {
+  padding: 10px;
   min-width: 10%;
   cursor: pointer;
+  margin-top: 10px;
 }
